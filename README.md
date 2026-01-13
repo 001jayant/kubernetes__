@@ -31,7 +31,7 @@ docker image build -t jcrhub.com/docker/urotaxi:1.0 .
 open variables.env and populate database information appropriately
 docker container run --name urotaxi --network=urotaxinetwork -p 8080:8082 --env-file=variables.env -d jcrhub.com/docker/urotaxi:1.0
 
-#Kubernetes Support
+⭐ Kubernetes Support
 The Urotaxi application can be deployed on Kubernetes using ConfigMaps for non-sensitive configuration and Secrets for sensitive data such as database passwords.
 Application and MySQL containers run as Kubernetes Deployments, while Services are used for internal and external access.
 This approach enables scalable, secure, and cloud-ready deployments.
