@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: urotaxiconfigmap
+  labels:
+    app: urotaxi
+data:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://10.0.0.27:3306/urotaxidb
+  serverPort: "8080"
